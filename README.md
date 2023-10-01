@@ -62,7 +62,7 @@ Which worker gets which tasks? depends on which listener is idle or active - as 
 ## Screenshot
 
 See a running example with at least 3 concurrent process windows here:
-![Three Terminals Sending and Receiving Message Simultaneously](./3terminals.JPG)
+![Three Terminals Sending and Receiving Message Simultaneously](./3terminals.jpg)
 
 
 ## End of File 
