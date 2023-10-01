@@ -35,6 +35,8 @@ Explore the RabbitMQ website.
 
 Will it terminate on its own? How do you know? 
 
+It will not terminate on its own. The terminal window clearly says 'ready for work' and provides a termination option (CTRL+C)
+
 ## Ready for Work
 
 1. Use your emitter_of_tasks to produce more task messages.
@@ -46,8 +48,10 @@ Will it terminate on its own? How do you know?
 Follow the tutorial. 
 Add multiple tasks (e.g. First message, Second message, etc.)
 How are tasks distributed? 
+    Tasks are distributed alternatively between the two listeners  
 Monitor the windows with at least two workers. 
-Which worker gets which tasks?
+Which worker gets which tasks? depends on which listener is idle or active - as one becomes avaialble, it gets the message and then the next and so forth.
+
 
 
 ## Reference
@@ -58,3 +62,4 @@ Which worker gets which tasks?
 ## Screenshot
 
 See a running example with at least 3 concurrent process windows here:
+![Three Terminals Sending and Receiving Message Simultaneously](./3terminals.JPG)
